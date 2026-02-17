@@ -10,7 +10,7 @@ return {
   },
   keys = {
     { "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "obsidian backlinks" },
-    { "<leader>ol", "<cmd>Obsidian links<cr>", desc = "obsidian links" },
+    { "<leader>oi", "<cmd>Obsidian links<cr>", desc = "obsidian links" },
     { "<leader>on", "<cmd>Obsidian new<cr>", desc = "new obsidian note" },
     { "<leader>os", "<cmd>Obsidian search<cr>", desc = "search obsidian notes" },
     { "<leader>oq", "<cmd>Obsidian quick_switch<cr>", desc = "quick switch note" },

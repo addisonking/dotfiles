@@ -3,7 +3,7 @@ local map = vim.keymap.set
 -- file operations
 map("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
-map("n", "<leader>q=", ":q!<CR>", { desc = "Force quit"})
+map("n", "<leader>q!", ":q!<CR>", { desc = "Force quit"})
 map("n", "<leader>q-", function()
   local file = vim.fn.expand("%:p")
   if file == "" then
@@ -19,12 +19,6 @@ map("n", "<leader>tw", ":set wrap!<CR>", { desc = "Toggle word wrap" })
 -- config
 map("n", "<leader>ev", ":vsplit $MYVIMRC<CR>", { desc = "Edit config" })
 map("n", "<leader>sr", ":source $MYVIMRC<CR>", { desc = "Source config" })
-
--- telescope
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
-map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
-map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Help tags" })
 
 -- file explorer
 map("n", "<leader>fs", ":Ex<CR>", { desc = "File explorer" })
@@ -74,6 +68,3 @@ map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
-
--- obsidian
-map("n", "<leader>nn", ":Obsidian new<CR>", { desc = "Create new note" })
