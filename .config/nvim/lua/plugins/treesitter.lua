@@ -1,0 +1,33 @@
+return {
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  event = { "BufReadPost", "BufNewFile" },
+  main = "nvim-treesitter.configs",
+  opts = {
+    ensure_installed = {
+      "svelte",
+      "javascript",
+      "typescript",
+      "html",
+      "css",
+      "json",
+      "lua",
+      "markdown",
+      "markdown_inline",
+      "tsx",
+      "vim",
+      "vimdoc",
+      "bash",
+      "regex",
+      "yaml",
+      "toml",
+    },
+    highlight = {
+      enable = true,
+      additional_vim_regex_highlighting = false,
+    },
+    indent = { enable = true },
+    auto_install = true,
+    sync_install = false,
+  },
+}

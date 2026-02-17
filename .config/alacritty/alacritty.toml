@@ -1,0 +1,9 @@
+[window]
+padding = { x = 8, y = 8}
+dynamic_padding = true
+opacity = 0.95
+
+[font]
+size = 20.0
+offset = { x = 0, y = 2 }
+
